@@ -1,6 +1,8 @@
+import googleapiclient.discovery, os, time, json, smtplib
 from flask import Flask, request
 from flask_cors import CORS
-import googleapiclient.discovery, os, time, json
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
 # Initializes Flask App
 app = Flask(__name__)
@@ -21,10 +23,52 @@ mc_instance_name = variables_json["mc_instance_name"]
 with open('passes.json', 'r') as f:
     passwords = json.load(f)
 
+my_email = passwords["email"]
+sender_address = passwords["emailer_send_address"]
+sender_pass = passwords["emailer_send_password"]
 mc_server_pass = passwords["mc_server_pass"]
 
 # Global Status Variables
 mc_server_status = 0
+
+def send_email(subject, message, address):
+    msg = MIMEMultipart()
+    msg['From'] = sender_address
+    msg['To'] = address
+
+    msg['Subject'] = subject
+    msg.attach(MIMEText(message, 'plain'))
+
+    session = smtplib.SMTP('smtp.gmail.com', 587) #use gmail with port
+    session.starttls() #enable security
+    session.login(sender_address, sender_pass) #login with mail_id and password
+    text = msg.as_string()
+    session.sendmail(sender_address, address, text)
+    session.quit()
+    print('Mail Sent')
+
+def email_contact(name, address, phone, subject, message):
+    subject1 = "New Message From: {}".format(name)
+    subject2 = "Your Message to Uzair Ahmed at uzairmahmed.com"
+    textStart1 = "Uzair, you have recieved a new mail from {}:\n\n".format(name)
+    textStart2 = "Hello {},  Here is a copy of your response:\n\n".format(name)
+    messageText = "    --- Contact Information ---\n\
+Name: {}\n\
+Email:{}\n\
+Phone:{}\n\
+\n\n    --------- Message ---------\n\
+{}".format(name, address, phone, message)
+
+
+    email1 = textStart1+messageText
+    email2 = textStart2+messageText
+
+    send_email(subject1, email1, my_email)
+    print ("Sent Email to Uzair")
+    if email2 != ""
+        send_email(subject2, email2, email)
+        print ("Sent Email to Contacter")
+
 
 # Starts a VM Instance on GCP
 def start_instance(compute, project, zone, name):
@@ -66,6 +110,17 @@ def get_status(compute, project, zone, name):
 def hello():
     return '<h1>Uh, hello?</h1><p>If you somehow landed here, please go to <a href="https://www.uzairmahmed.com">https://www.uzairmahmed.com</a></p>'
 
+@app.route('/contact-email', methods=['POST'])
+def emailer():
+    requestJson = request.get_json(force=True)
+    name = requestJson['name']
+    address = requestJson['address']
+    phone = requestJson['phone']
+    subject = requestJson['subject']
+    message = requestJson['message']
+
+    email_contact(name, address, phone, subject, message)
+
 @app.route('/mc-password-check', methods=['POST'])
 def passCheck():
     requestJson = request.get_json(force=True)
@@ -77,9 +132,6 @@ def passCheck():
     else:
         print ("INVALID PASSWORD")
         return "INVALID"
-
-
-    
 
 @app.route('/start-mc', methods=['GET'])
 def start_mc_server():
