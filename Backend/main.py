@@ -65,8 +65,8 @@ Phone:{}\n\
 
     send_email(subject1, email1, my_email)
     print ("Sent Email to Uzair")
-    if email2 != ""
-        send_email(subject2, email2, email)
+    if email2 != "":
+        send_email(subject2, email2, address)
         print ("Sent Email to Contacter")
 
 
@@ -114,12 +114,14 @@ def hello():
 def emailer():
     requestJson = request.get_json(force=True)
     name = requestJson['name']
-    address = requestJson['address']
+    address = requestJson['email']
     phone = requestJson['phone']
     subject = requestJson['subject']
     message = requestJson['message']
 
     email_contact(name, address, phone, subject, message)
+    print(name)
+    return 'done'
 
 @app.route('/mc-password-check', methods=['POST'])
 def passCheck():
