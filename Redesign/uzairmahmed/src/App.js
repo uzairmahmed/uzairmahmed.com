@@ -2,20 +2,18 @@ import React from 'react';
 import './App.css';
 
 import BaseComp from './components/BaseComponent'
-import Nav from './components/NavBar'
+
+import Navbar from './components/NavbarComponent'
+import Header from './components/HeaderComponent'
 
 function App() {
   return (
     <div className="App">
       <head>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-
       </head>
-      <header className="App-header">
-        <BaseComp />
-      </header>
       <body>
-        <Nav />
+        <Navbar />
+        <Header />
       </body>
     </div>
   );

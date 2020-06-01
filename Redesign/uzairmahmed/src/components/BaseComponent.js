@@ -1,14 +1,12 @@
-import React from 'react';
-//import './App.css'; specific css file
+import React, { Component } from 'react';
 
-function App() {
-  return (
-    <div>
-        <text>
-            hello
-        </text>
-    </div>
-  );
+export default class Base extends Component {
+  render() {
+    return (
+      <div>
+  
+      </div>
+    );
+  }
 }
 
-export default App;
