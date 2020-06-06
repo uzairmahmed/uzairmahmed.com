@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import { Parallax, Background } from 'react-parallax';
+import { Parallax } from 'react-parallax';
 
-import { headerStyles } from '../styles/'
+import { baseStyles, headerStyles } from '../styles/'
 
-export default class HeaderComponent extends Component {
+class HeaderComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: "uzair ahmed.",
-      subtitle: "3rd Year Computer Engineering Student at Ryerson University",
+      title: "Uzair Ahmed.",
+      subtitle: "3rd Year Computer + Software Engineering Student at Ryerson University",
       background: require('../assets/backgrounds/1.jpg')
     }
   }
@@ -27,10 +27,10 @@ export default class HeaderComponent extends Component {
       >
         <div
           className="text-center d-flex align-items-center"
-          style={headerStyles.div}
+          style={baseStyles.block}
         >
           <div className="text-center container-fluid">
-            <h1 className="text-capitalize text-center text-white" style={headerStyles.title}>
+            <h1 className="text-center text-white" style={headerStyles.title}>
               {this.state.title}
             </h1>
             <h4 className="text-center text-white" style={headerStyles.subtitle}>
@@ -43,3 +43,5 @@ export default class HeaderComponent extends Component {
     );
   }
 }
+
+export default HeaderComponent;

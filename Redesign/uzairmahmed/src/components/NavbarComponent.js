@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 import { navbarStyles } from '../styles/'
 
-export default class NavbarComponent extends Component {
+class NavbarComponent extends Component {
   render() {
     return (
       <Navbar className="navbar-dark fixed-top" expand="md" style={navbarStyles.bar}>
@@ -27,3 +27,5 @@ export default class NavbarComponent extends Component {
     );
   }
 }
+
+export default NavbarComponent;

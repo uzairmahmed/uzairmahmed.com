@@ -3,19 +3,19 @@ import { theme } from '.'
 const div = {
     height: "100vh",
     width: "100vw",
-    backgroundPosition: "center",
-    backgroundSize: "cover",
 }
 
 const title = {
-    fontFamily: theme.fonts.font,
+    fontFamily: theme.fonts.fontHeader,
     fontWeight: theme.fonts.fontWeight,
-    color: "#FFF",
+    fontSize: theme.fonts.fontSizeTitle,
+    color: theme.fonts.fontColor,
 }
 
 const subtitle = {
     fontFamily: theme.fonts.font,
     fontWeight: theme.fonts.fontWeight,
+    fontSize: theme.fonts.fontSize,
     color: theme.fonts.fontColor,
 }
 
