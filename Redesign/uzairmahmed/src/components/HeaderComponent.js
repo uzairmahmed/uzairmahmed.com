@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Parallax, Background } from 'react-parallax';
 
-import { headerdiv, headertitle, headersubtitle } from '../styles/styles.js'
+import { headerStyles } from '../styles/'
 
 export default class HeaderComponent extends Component {
   constructor(props) {
@@ -27,15 +27,13 @@ export default class HeaderComponent extends Component {
       >
         <div
           className="text-center d-flex align-items-center"
-          style={{
-            ...headerdiv,
-          }}
+          style={headerStyles.div}
         >
           <div className="text-center container-fluid">
-            <h1 className="text-capitalize text-center text-white" style={headertitle}>
+            <h1 className="text-capitalize text-center text-white" style={headerStyles.title}>
               {this.state.title}
             </h1>
-            <h4 className="text-center text-white" style={headersubtitle}>
+            <h4 className="text-center text-white" style={headerStyles.subtitle}>
               {this.state.subtitle}
             </h4>
           </div>

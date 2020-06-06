@@ -9,17 +9,17 @@ import Header from './components/HeaderComponent'
 function App() {
   return (
     <div className="App">
+
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet" />
       </head>
+
       <body style={{ backgroundColor: "#000" }}>
         <Navbar />
         <Header />
-        <Header />
-        <Header />
-        <Header />
 
       </body>
+      
     </div>
   );
 }
