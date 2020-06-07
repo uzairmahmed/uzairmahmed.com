@@ -4,6 +4,7 @@ import * as baseStyles from  './baseStyles'
 import * as headerStyles from './headerStyles'
 import * as navbarStyles from './navbarStyles'
 import * as skillsStyles from './skillsStyles'
+import * as projectStyles from './projectStyles'
 
 export {
     theme,
@@ -11,5 +12,6 @@ export {
     baseStyles,
     headerStyles,
     navbarStyles,
-    skillsStyles
+    skillsStyles,
+    projectStyles
 }

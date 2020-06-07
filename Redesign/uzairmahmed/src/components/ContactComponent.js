@@ -3,9 +3,11 @@ import { Parallax } from 'react-parallax';
 import { Element } from 'react-scroll';
 
 
-import { baseStyles, bootstrapClasses, theme } from '../styles/'
+import BaseDiv from '../common/BaseDiv'
 
-export default class Base extends Component {
+import { baseStyles, bootstrapClasses, theme } from '../styles'
+
+export default class ContactComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -15,8 +17,7 @@ export default class Base extends Component {
 
   render() {
     return (
-      <Element name="BASE" className="BASE">
-
+      <Element name="Contact" className="Contact">
         <Parallax
           blur={theme.parallax.blur}
           bgImage={this.state.background}
@@ -24,9 +25,13 @@ export default class Base extends Component {
           strength={theme.parallax.strength}
           style={theme.parallax.style}
         >
-          <div>
-
-          </div>
+          <BaseDiv
+            header="Contact."
+            maincontent={
+              <>
+              </>
+            }
+          />
         </Parallax>
       </Element>
     );

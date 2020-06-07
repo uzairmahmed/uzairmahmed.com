@@ -7,6 +7,9 @@ import Navbar from './components/NavbarComponent'
 import Header from './components/HeaderComponent'
 import About from './components/AboutComponent'
 import Skills from './components/SkillsComponent'
+import Projects from './components/ProjectsComponent'
+import Contact from './components/ContactComponent'
+
 
 function App() {
   return (
@@ -19,10 +22,12 @@ function App() {
       </head>
 
       <body style={{ backgroundColor: "#000" }}>
-        <Navbar id="nav"    />
-        <Header id="header" />
-        <About  id="about"  />
-        <Skills id="skills" />
+        <Navbar   />
+        <Header   />
+        <About    />
+        <Skills   />
+        <Projects />
+        <Contact />
 
       </body>
       

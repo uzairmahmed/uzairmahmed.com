@@ -1,17 +1,18 @@
 import { theme } from '.'
 
 const block = {
-    height: "100vh",
+    margin:theme.spacing.regular + " 0px" ,
+    minHeight: "100vh",
     width: "100vw",
 }
 
 const row = {
     justifyContent: "center",
     alignItems: "center", 
+
 }
 
 const container = {
-    marginTop: 50,
     alignItems:"center",
     // backgroundColor:"rgba(100,100,100,0.6)"
 }
@@ -39,7 +40,8 @@ const profilepicture = {
 const button = {
     margin: theme.spacing.small,
     padding: theme.spacing.tiny + " " + theme.spacing.small,
-    borderRadius:theme.spacing.radius,
+    marginBottom:0,
+    borderRadius:theme.spacing.round,
     fontFamily: theme.fonts.fontParagraph,
     fontSize: theme.fonts.fontSizeParagraph,
     borderColor: theme.colors.secondary,

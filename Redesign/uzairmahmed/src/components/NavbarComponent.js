@@ -43,8 +43,8 @@ class NavbarComponent extends Component {
               <NavLink title="Home" />
               <NavLink title="About" />
               <NavLink title="Skills" />
-              {/* <NavLink title="Projects"/> */}
-              {/* <NavLink title="Contact"/> */}
+              <NavLink title="Projects"/>
+              <NavLink title="Contact"/>
             </Nav>
           </Navbar.Collapse>
         </div>

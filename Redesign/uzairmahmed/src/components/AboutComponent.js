@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
+import Image from 'react-bootstrap/Image'
 import { Parallax } from 'react-parallax';
 import { Element } from 'react-scroll'
 
@@ -52,7 +53,7 @@ hardware development include IoT, Robotics and Circuit Design.",
                 </Col>
 
                 <Col>
-                  <img
+                  <Image
                     className={bootstrapClasses.images.rounded}
                     style={baseStyles.profilepicture}
                     src={this.state.profilepic}

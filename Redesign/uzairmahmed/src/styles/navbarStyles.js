@@ -2,7 +2,7 @@ import { theme } from '.'
 
 const bar = {
     width: "100vw",
-    padding: "20px 50px",
+    padding: theme.spacing.small + " " + theme.spacing.regular,
     justifyContent: "space-between",
     verticalAlign: "center"
 }
@@ -10,12 +10,17 @@ const bar = {
 const brand = {
     fontFamily: theme.fonts.font,
     fontSize: theme.fonts.fontSize,
-    fontWeight: "200",
+    fontWeight: theme.fonts.fontWeightLight,
+}
+
+const link = {
+    padding: "0px"
 }
 
 const item = {
+    padding: theme.spacing.tiny,
     fontFamily: theme.fonts.font,
-    fontWeight: "200",
+    fontWeight: theme.fonts.fontWeightLight,
 }
 
-export { bar, brand, item }
+export { bar, link, brand, item }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Image from 'react-bootstrap/Image'
 import { Parallax } from 'react-parallax';
 
 import { baseStyles, skillsStyles, bootstrapClasses, theme } from '../styles'
@@ -17,7 +18,7 @@ export default class SkillCard extends Component {
         className={bootstrapClasses.rows.skillsRow}>
           <Col
           className={bootstrapClasses.columns.skillsColumnIcon}>
-            <img
+            <Image
               className={bootstrapClasses.images.rounded}
               style={skillsStyles.skillsIcon}
               alt={this.props.item.title + "Logo"}

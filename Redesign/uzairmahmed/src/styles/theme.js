@@ -8,8 +8,11 @@ const colors = {
 const spacing = {
     tiny: "10px",
     small: "25px",
+    regular: "50px",
 
-    radius: "50px"
+    cardWidth: "300px",
+    radius: "25px",
+    round: "50px"
 }
 
 const fonts = {
@@ -30,12 +33,12 @@ const fonts = {
 }
 
 const parallax = {
-    blur: 0.1,
+    blur: 5,
     alt: "Background",
     strength: 500,
     style: {
-        backgroundPosition: "center",
-        backgroundSize: "cover",
+        backgroundPosition: "top",
+        backgroundSize: "auto",
     }
 }
 
