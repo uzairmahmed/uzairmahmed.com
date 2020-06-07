@@ -1,5 +1,10 @@
 import { theme } from '.'
 
+
+const skillsNav = {
+    justifyContent: "space-evenly",
+}
+
 const skillsIcon = {
     width: "100px",
     height: "100px",
@@ -21,4 +26,4 @@ const skillsText= {
     justifyContent: "left"
 }
 
-export { skillsIcon, skillsHeader, skillsText }
+export { skillsNav, skillsIcon, skillsHeader, skillsText }

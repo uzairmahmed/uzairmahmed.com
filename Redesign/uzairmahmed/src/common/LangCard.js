@@ -11,7 +11,7 @@ export default class LangCard extends Component {
 
   render() {
     return (
-      <Col>
+      <Col xs={6} sm={6} md={3} lg={3} xl={3}>
         <img
           className={bootstrapClasses.images.rounded}
           style={skillsStyles.skillsIcon}

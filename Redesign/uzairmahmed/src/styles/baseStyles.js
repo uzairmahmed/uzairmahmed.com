@@ -11,6 +11,8 @@ const row = {
 }
 
 const container = {
+    marginTop: 50,
+    alignItems:"center",
     // backgroundColor:"rgba(100,100,100,0.6)"
 }
 

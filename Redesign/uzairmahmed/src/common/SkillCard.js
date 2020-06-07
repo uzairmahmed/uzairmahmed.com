@@ -12,7 +12,7 @@ export default class SkillCard extends Component {
 
   render() {
     return (
-      <Col>
+      <Col xs={12} sm={12} md={12} lg={6} xl={6}>
         <Row
         className={bootstrapClasses.rows.skillsRow}>
           <Col
@@ -39,7 +39,6 @@ export default class SkillCard extends Component {
             </p>
           </Col>
         </Row>
-
       </Col>
 
     );
