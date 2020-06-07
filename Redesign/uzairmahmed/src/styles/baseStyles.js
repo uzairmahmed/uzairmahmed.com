@@ -15,7 +15,7 @@ const container = {
 }
 
 const header = {
-    padding:"10px",
+    padding:theme.spacing.tiny,
     fontFamily: theme.fonts.fontHeader,
     fontSize: theme.fonts.fontSizeParagraph,
     fontWeight: theme.fonts.fontWeight,
@@ -24,23 +24,22 @@ const header = {
 
 const paragraph = {
     fontFamily: theme.fonts.fontParagraph,
-    fontSize: theme.fonts.fontSizeParagraph,
+    fontSize: theme.fonts.fontSizePara,
     color: theme.fonts.fontColor 
 }
 
 const profilepicture = {
     width: "250px",
     height: "250px",
-    margin: "25px",
+    margin: theme.spacing.small,
 }
 
 const button = {
-    margin: "25px",
-    padding: "10px 25px",
-    borderRadius:"10px",
+    margin: theme.spacing.small,
+    padding: theme.spacing.tiny + " " + theme.spacing.small,
+    borderRadius:theme.spacing.radius,
     fontFamily: theme.fonts.fontParagraph,
     fontSize: theme.fonts.fontSizeParagraph,
-    // backgroundColor: theme.colors.primary,
     borderColor: theme.colors.secondary,
     color: theme.colors.secondary,
 }

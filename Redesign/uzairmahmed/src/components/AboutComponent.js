@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 import { Parallax } from 'react-parallax';
 
-import { baseStyles, bootstrapClasses } from '../styles';
+import { baseStyles, bootstrapClasses, theme } from '../styles';
 import BaseDiv from '../common/BaseDiv'
 
 class AboutComponent extends Component {
@@ -15,10 +13,12 @@ class AboutComponent extends Component {
     this.state = {
       background: require('../assets/backgrounds/1.jpg'),
       profilepic: require('../assets/pfp2.jpeg'),
+
       col1Text: "Hello, my name is Uzair Ahmed. I'm a \
 3rd year Computer + Software Engineering student at \
 Ryerson University. \n\nI have a passion for software and \
 hardware development.",
+      
       col2Text: "My Interests in Software Development are \
 geared towards Machine Learning, Game Development and App \
 Development. \n\nAdditionally, my interests related to \
@@ -30,14 +30,11 @@ hardware development include IoT, Robotics and Circuit Design.",
   render() {
     return (
       <Parallax
-        blur={0.1}
-        bgImage={this.state.background}
-        bgImageAlt="Background"
-        strength={500}
-        style={{
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-        }}
+      blur={theme.parallax.blur}
+      bgImage={this.state.background}
+      bgImageAlt={theme.parallax.alt}
+      strength={theme.parallax.strength}
+      style={theme.parallax.style}
       >
         <BaseDiv
           header="About."
@@ -54,7 +51,7 @@ hardware development include IoT, Robotics and Circuit Design.",
 
               <Col>
                 <img
-                  className={bootstrapClasses.images.profilePic}
+                  className={bootstrapClasses.images.rounded}
                   style={baseStyles.profilepicture}
                   src={this.state.profilepic}
                 />

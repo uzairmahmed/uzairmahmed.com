@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Parallax } from 'react-parallax';
 
+import { baseStyles, bootstrapClasses, theme } from '../styles/'
+
 export default class Base extends Component {
   constructor(props) {
     super(props);
@@ -12,14 +14,11 @@ export default class Base extends Component {
   render() {
     return (
       <Parallax
-        blur={0.1}
+        blur={theme.parallax.blur}
         bgImage={this.state.background}
-        bgImageAlt="Background"
-        strength={500}
-        style={{
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-        }}
+        bgImageAlt={theme.parallax.alt}
+        strength={theme.parallax.strength}
+        style={theme.parallax.style}
       >
         <div>
 

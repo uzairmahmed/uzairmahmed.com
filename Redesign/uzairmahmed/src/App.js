@@ -4,6 +4,7 @@ import React from 'react';
 import Navbar from './components/NavbarComponent'
 import Header from './components/HeaderComponent'
 import About from './components/AboutComponent'
+import Skills from './components/SkillsComponent'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Navbar />
         <Header />
         <About />
+        <Skills />
 
       </body>
       

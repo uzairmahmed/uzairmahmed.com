@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Parallax } from 'react-parallax';
 
-import { baseStyles, headerStyles } from '../styles/'
+import { baseStyles, headerStyles, bootstrapClasses, theme } from '../styles/'
 
 class HeaderComponent extends Component {
   constructor(props) {
@@ -16,24 +16,21 @@ class HeaderComponent extends Component {
   render() {
     return (
       <Parallax
-        blur={0.1}
+        blur={theme.parallax.blur}
         bgImage={this.state.background}
-        bgImageAlt="Background"
-        strength={500}
-        style={{
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-        }}
+        bgImageAlt={theme.parallax.alt}
+        strength={theme.parallax.strength}
+        style={theme.parallax.style}
       >
         <div
-          className="text-center d-flex align-items-center"
+          className={bootstrapClasses.divs.headerDiv1}
           style={baseStyles.block}
         >
-          <div className="text-center container-fluid">
-            <h1 className="text-center text-white" style={headerStyles.title}>
+          <div className={bootstrapClasses.divs.headerDiv2}>
+            <h1 className={bootstrapClasses.headings.headerHeading} style={headerStyles.title}>
               {this.state.title}
             </h1>
-            <h4 className="text-center text-white" style={headerStyles.subtitle}>
+            <h4 className={bootstrapClasses.headings.headerHeading} style={headerStyles.subtitle}>
               {this.state.subtitle}
             </h4>
           </div>

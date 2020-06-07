@@ -3,11 +3,13 @@ import * as bootstrapClasses from './bootstrapClasses';
 import * as baseStyles from  './baseStyles'
 import * as headerStyles from './headerStyles'
 import * as navbarStyles from './navbarStyles'
+import * as skillsStyles from './skillsStyles'
 
 export {
     theme,
     bootstrapClasses,
     baseStyles,
     headerStyles,
-    navbarStyles
+    navbarStyles,
+    skillsStyles
 }
