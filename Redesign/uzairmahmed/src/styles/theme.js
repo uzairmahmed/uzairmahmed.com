@@ -39,4 +39,11 @@ const parallax = {
     }
 }
 
-export { colors, spacing, fonts, parallax }
+const scrolls = {
+    spy: true,
+    smooth: true,
+    offset: 0,
+    duration: 500,
+}
+
+export { colors, spacing, fonts, parallax, scrolls }

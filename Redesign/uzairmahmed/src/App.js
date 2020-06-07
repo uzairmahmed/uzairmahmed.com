@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './styles/scrollbar.css'
+
 //import BaseComp from './components/BaseComponent'
 import Navbar from './components/NavbarComponent'
 import Header from './components/HeaderComponent'
@@ -17,10 +19,10 @@ function App() {
       </head>
 
       <body style={{ backgroundColor: "#000" }}>
-        <Navbar />
-        <Header />
-        <About />
-        <Skills />
+        <Navbar id="nav"    />
+        <Header id="header" />
+        <About  id="about"  />
+        <Skills id="skills" />
 
       </body>
       

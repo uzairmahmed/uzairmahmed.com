@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab'
-import Tabs from 'react-bootstrap/Tabs'
 import { Parallax } from 'react-parallax';
+import { Element } from 'react-scroll'
 
 import { baseStyles, skillsStyles, bootstrapClasses, theme } from '../styles';
 
@@ -158,112 +158,106 @@ class SkillsComponent extends Component {
 
   render() {
     return (
-      <Parallax
-        blur={theme.parallax.blur}
-        bgImage={this.state.background}
-        bgImageAlt={theme.parallax.alt}
-        strength={theme.parallax.strength}
-        style={theme.parallax.style}
-      >
-        <BaseDiv
-          header="Skills."
-          maincontent={
-            <div>
-
-              {/* <Tabs defaultActiveKey="languages" id="Skills-Tabs" style={skillsStyles.skillsNav}> */}
-              <Tab.Container id="left-tabs-example" defaultActiveKey="languages">
-                <Nav style={skillsStyles.skillsNav}>
-                  <Nav.Item>
-                    <Nav.Link className="text-white" eventKey="languages">Languages</Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link className="text-white" eventKey="software">Software</Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link className="text-white" eventKey="hardware">Hardware</Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link className="text-white" eventKey="cloud">Cloud Technologies</Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link className="text-white" eventKey="web">Web Development</Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link className="text-white" eventKey="concepts">Concepts</Nav.Link>
-                  </Nav.Item>
-                </Nav>
-                <Tab.Content>
-                  <Tab.Pane eventKey="languages">
-                    <Row
-                      className={bootstrapClasses.rows.langsCategoryRow}
-                    >
-                      <LangCard item={this.state.languages.python} />
-                      <LangCard item={this.state.languages.js} />
-                      <LangCard item={this.state.languages.bash} />
-                      <LangCard item={this.state.languages.java} />
-                      <LangCard item={this.state.languages.cSharp} />
-                      <LangCard item={this.state.languages.htmlcss} />
-                      <LangCard item={this.state.languages.cplusplus} />
-                      <LangCard item={this.state.languages.vhdl} />
-                    </Row>
-                  </Tab.Pane>
-                  <Tab.Pane eventKey="software">
-                    <Row
-                      className={bootstrapClasses.rows.skillsCategoryRow}
-                    >
-                      <SkillCard item={this.state.software.reactNative} />
-                      <SkillCard item={this.state.software.unity} />
-                    </Row>
-                  </Tab.Pane>
-                  <Tab.Pane eventKey="hardware">
-                    <Row
-                      className={bootstrapClasses.rows.skillsCategoryRow}
-                    >
-                      <SkillCard item={this.state.hardware.arduino} />
-                      <SkillCard item={this.state.hardware.pi} />
-                      <SkillCard item={this.state.hardware.fpga} />
-                    </Row>
-                  </Tab.Pane>
-                  <Tab.Pane eventKey="cloud">
-                    <Row
-                      className={bootstrapClasses.rows.skillsCategoryRow}
-                    >
-                      <SkillCard item={this.state.cloud.gcp} />
-                      <SkillCard item={this.state.cloud.docker} />
-                      <SkillCard item={this.state.cloud.aws} />
-                      <SkillCard item={this.state.cloud.kube} />
-                    </Row>
-                  </Tab.Pane>
-                  <Tab.Pane eventKey="web">
-                    <Row
-                      className={bootstrapClasses.rows.skillsCategoryRow}
-                    >
-                      <SkillCard item={this.state.web.react} />
-                      <SkillCard item={this.state.web.flask} />
-                      <SkillCard item={this.state.web.bootstrap} />
-                      <SkillCard item={this.state.web.django} />
-                    </Row>
-                  </Tab.Pane>
-                  <Tab.Pane eventKey="concepts">
-                    <Row
-                      className={bootstrapClasses.rows.skillsCategoryRow}
-                    >
-                      <SkillCard item={this.state.concepts.ml} />
-                      <SkillCard item={this.state.concepts.circuits} />
-                      <SkillCard item={this.state.concepts.iot} />
-                      <SkillCard item={this.state.concepts.collab} />
-                    </Row>
-                  </Tab.Pane>
-                </Tab.Content>
-              </Tab.Container>
-
-
-              {/* </Tabs> */}
-            </div>
-          }
-        />
-
-      </Parallax>
+      <Element name="Skills" className="Skills">
+        <Parallax
+          blur={theme.parallax.blur}
+          bgImage={this.state.background}
+          bgImageAlt={theme.parallax.alt}
+          strength={theme.parallax.strength}
+          style={theme.parallax.style}
+        >
+          <BaseDiv
+            header="Skills."
+            maincontent={
+                <Tab.Container id="left-tabs-example" defaultActiveKey="languages">
+                  <Nav style={skillsStyles.skillsNav}>
+                    <Nav.Item>
+                      <Nav.Link className="text-white" eventKey="languages">Languages</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link className="text-white" eventKey="software">Software</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link className="text-white" eventKey="hardware">Hardware</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link className="text-white" eventKey="cloud">Cloud Technologies</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link className="text-white" eventKey="web">Web Development</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link className="text-white" eventKey="concepts">Concepts</Nav.Link>
+                    </Nav.Item>
+                  </Nav>
+                  <Tab.Content>
+                    <Tab.Pane eventKey="languages">
+                      <Row
+                        className={bootstrapClasses.rows.langsCategoryRow}
+                      >
+                        <LangCard item={this.state.languages.python} />
+                        <LangCard item={this.state.languages.js} />
+                        <LangCard item={this.state.languages.bash} />
+                        <LangCard item={this.state.languages.java} />
+                        <LangCard item={this.state.languages.cSharp} />
+                        <LangCard item={this.state.languages.htmlcss} />
+                        <LangCard item={this.state.languages.cplusplus} />
+                        <LangCard item={this.state.languages.vhdl} />
+                      </Row>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="software">
+                      <Row
+                        className={bootstrapClasses.rows.skillsCategoryRow}
+                      >
+                        <SkillCard item={this.state.software.reactNative} />
+                        <SkillCard item={this.state.software.unity} />
+                      </Row>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="hardware">
+                      <Row
+                        className={bootstrapClasses.rows.skillsCategoryRow}
+                      >
+                        <SkillCard item={this.state.hardware.arduino} />
+                        <SkillCard item={this.state.hardware.pi} />
+                        <SkillCard item={this.state.hardware.fpga} />
+                      </Row>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="cloud">
+                      <Row
+                        className={bootstrapClasses.rows.skillsCategoryRow}
+                      >
+                        <SkillCard item={this.state.cloud.gcp} />
+                        <SkillCard item={this.state.cloud.docker} />
+                        <SkillCard item={this.state.cloud.aws} />
+                        <SkillCard item={this.state.cloud.kube} />
+                      </Row>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="web">
+                      <Row
+                        className={bootstrapClasses.rows.skillsCategoryRow}
+                      >
+                        <SkillCard item={this.state.web.react} />
+                        <SkillCard item={this.state.web.flask} />
+                        <SkillCard item={this.state.web.bootstrap} />
+                        <SkillCard item={this.state.web.django} />
+                      </Row>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="concepts">
+                      <Row
+                        className={bootstrapClasses.rows.skillsCategoryRow}
+                      >
+                        <SkillCard item={this.state.concepts.ml} />
+                        <SkillCard item={this.state.concepts.circuits} />
+                        <SkillCard item={this.state.concepts.iot} />
+                        <SkillCard item={this.state.concepts.collab} />
+                      </Row>
+                    </Tab.Pane>
+                  </Tab.Content>
+                </Tab.Container>
+            }
+          />
+        </Parallax>
+      </Element>
 
     );
   }

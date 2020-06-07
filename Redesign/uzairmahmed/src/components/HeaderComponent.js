@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Parallax } from 'react-parallax';
+import { Element } from 'react-scroll';
 
 import { baseStyles, headerStyles, bootstrapClasses, theme } from '../styles/'
 
@@ -15,28 +16,29 @@ class HeaderComponent extends Component {
 
   render() {
     return (
-      <Parallax
-        blur={theme.parallax.blur}
-        bgImage={this.state.background}
-        bgImageAlt={theme.parallax.alt}
-        strength={theme.parallax.strength}
-        style={theme.parallax.style}
-      >
-        <div
-          className={bootstrapClasses.divs.headerDiv1}
-          style={baseStyles.block}
+      <Element name="Home" className="Home">
+        <Parallax
+          blur={theme.parallax.blur}
+          bgImage={this.state.background}
+          bgImageAlt={theme.parallax.alt}
+          strength={theme.parallax.strength}
+          style={theme.parallax.style}
         >
-          <div className={bootstrapClasses.divs.headerDiv2}>
-            <h1 className={bootstrapClasses.headings.headerHeading} style={headerStyles.title}>
-              {this.state.title}
-            </h1>
-            <h4 className={bootstrapClasses.headings.headerHeading} style={headerStyles.subtitle}>
-              {this.state.subtitle}
-            </h4>
+          <div
+            className={bootstrapClasses.divs.headerDiv1}
+            style={baseStyles.block}
+          >
+            <div className={bootstrapClasses.divs.headerDiv2}>
+              <h1 className={bootstrapClasses.headings.headerHeading} style={headerStyles.title}>
+                {this.state.title}
+              </h1>
+              <h4 className={bootstrapClasses.headings.headerHeading} style={headerStyles.subtitle}>
+                {this.state.subtitle}
+              </h4>
+            </div>
           </div>
-        </div>
-      </Parallax>
-
+        </Parallax>
+      </Element>
     );
   }
 }
