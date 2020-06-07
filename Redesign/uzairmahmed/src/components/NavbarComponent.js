@@ -10,15 +10,30 @@ class NavbarComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      barColor: 'rgba(0,0,0,0)'
+      currentScrollHeight: 0
+    }
+  }
+
+  componentDidMount() {
+    window.onscroll = () => {
+      const newScrollHeight = Math.ceil(window.scrollY / 50) * 50;
+      if (this.state.currentScrollHeight != newScrollHeight) {
+        this.setState({ currentScrollHeight: newScrollHeight })
+      }
     }
   }
 
 
 
   render() {
+    const opacity = Math.min(this.state.currentScrollHeight / 1000, )
     return (
-      <Navbar className="navbar-dark fixed-top" expand="md" style={navbarStyles.bar}>
+      <Navbar className="navbar-dark fixed-top" expand="md"
+        style={{
+          ...navbarStyles.bar,
+          backgroundColor:'rgb(0,0,0,' + opacity + ')',
+        }}
+      >
         <Navbar.Brand href="#home" style={navbarStyles.brand}>Uzair Ahmed</Navbar.Brand>
 
         <div>
