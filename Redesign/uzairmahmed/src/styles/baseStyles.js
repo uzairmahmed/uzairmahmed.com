@@ -9,7 +9,6 @@ const block = {
 const row = {
     justifyContent: "center",
     alignItems: "center", 
-
 }
 
 const container = {

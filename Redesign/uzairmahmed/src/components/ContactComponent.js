@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import { Parallax } from 'react-parallax';
 import { Element } from 'react-scroll';
 
-
-import BaseDiv from '../common/BaseDiv'
-import SocialContact from '../common/SocialContact'
-import OtherContact from '../common/OtherContact'
-
-import { baseStyles, bootstrapClasses, theme } from '../styles'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
+
+import BaseDiv from '../common/BaseDiv'
+import ContactCard from '../common/ContactCard'
+import ContactForm from '../common/ContactForm'
+
+import { baseStyles, contactStyles, bootstrapClasses, theme } from '../styles'
+
 
 export default class ContactComponent extends Component {
   constructor(props) {
@@ -20,25 +20,27 @@ export default class ContactComponent extends Component {
       email: {
         value: "uzairmahmed@gmail.com",
         link: "mailto:uzairmahmed@gmail.com",
+        img: require('../assets/web-icons/mail.png')
       },
       phone: {
         value: "(647)-879-3355",
         link: "tel:+16478793355",
+        img: require('../assets/web-icons/phone.png')
       },
       github: {
         value: "uzairmahmed",
         link: "https://github.com/uzairmahmed",
-        img: require('../assets/web-icons/003-github-image.png')
+        img: require('../assets/web-icons/github.png')
       },
       ig: {
         value: "@uzairmahmed",
         link: "https://www.instagram.com/uzairmahmed/",
-        img: require('../assets/web-icons/001-instagram.png')
+        img: require('../assets/web-icons/insta.png')
       },
       linkedin: {
         value: "in/uzairmahmed",
         link: "https://www.linkedin.com/in/uzairmahmed/",
-        img: require('../assets/web-icons/002-linkedin.png')
+        img: require('../assets/web-icons/linkedin.png')
       },
     }
   }
@@ -59,33 +61,36 @@ export default class ContactComponent extends Component {
               <>
                 <Row>
                   <Col>
-                    <OtherContact
-                      title="Email."
+                    <ContactCard
                       value={this.state.email.value}
                       link={this.state.email.link}
+                      img={this.state.email.img}
                     />
-                    <OtherContact
-                      title="Phone."
+                    <ContactCard
                       value={this.state.phone.value}
                       link={this.state.phone.link}
+                      img={this.state.phone.img}
                     />
-                    <Row>
-                      <SocialContact
-                        value={this.state.github.value}
-                        link={this.state.github.link}
-                        img={this.state.github.img}
-                      />
-                      <SocialContact
-                        value={this.state.linkedin.value}
-                        link={this.state.linkedin.link}
-                        img={this.state.linkedin.img}
-                      />
-                      <SocialContact
-                        value={this.state.ig.value}
-                        link={this.state.ig.link}
-                        img={this.state.ig.img}
-                      />
-                    </Row>
+                      <Row>
+                        <ContactCard
+                          value={this.state.github.value}
+                          link={this.state.github.link}
+                          img={this.state.github.img}
+                        />
+                        <ContactCard
+                          value={this.state.linkedin.value}
+                          link={this.state.linkedin.link}
+                          img={this.state.linkedin.img}
+                        />
+                        <ContactCard
+                          value={this.state.ig.value}
+                          link={this.state.ig.link}
+                          img={this.state.ig.img}
+                        />
+                      </Row>
+                  </Col>
+                  <Col>
+                    <ContactForm />
                   </Col>
                 </Row>
               </>

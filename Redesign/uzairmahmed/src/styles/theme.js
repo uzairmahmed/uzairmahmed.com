@@ -9,8 +9,10 @@ const spacing = {
     tiny: "10px",
     small: "25px",
     regular: "50px",
+    large: "75px",
 
     cardWidth: "300px",
+    inputRadius: "10px",
     radius: "25px",
     round: "50px"
 }
@@ -25,7 +27,7 @@ const fonts = {
     fontSize: "20px",
     fontSizeTitle: "50px",
     fontSizeHead: "25px",
-    fontSizePara: "12px",
+    fontSizePara: "15px",
 
     fontWeight: "400",
     fontWeightLight: "200",
