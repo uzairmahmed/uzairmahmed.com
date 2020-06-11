@@ -17,7 +17,7 @@ export default class ContactComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      background: require('../assets/backgrounds/2.jpg'),
+      background: require('../assets/backgrounds/3.jpg'),
       email: {
         value: "uzairmahmed@gmail.com",
         link: "mailto:uzairmahmed@gmail.com",

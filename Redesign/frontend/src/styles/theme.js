@@ -39,9 +39,9 @@ const fonts = {
 }
 
 const parallax = {
-    blur: 5,
+    blur: 1,
     alt: "Background",
-    strength: 500,
+    strength: 900,
     style: {
         backgroundPosition: "top",
         backgroundSize: "auto",
@@ -51,7 +51,7 @@ const parallax = {
 const scrolls = {
     spy: true,
     smooth: true,
-    offset: -35,
+    offset: 0,
     duration: 500,
 }
 

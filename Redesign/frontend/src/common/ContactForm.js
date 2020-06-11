@@ -50,6 +50,7 @@ class ContactForm extends Component {
         </Form.Group>
 
         <Button
+          disabled
           variant="light"
           type="submit"
           style={{

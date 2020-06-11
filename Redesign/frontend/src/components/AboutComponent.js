@@ -13,7 +13,7 @@ class AboutComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      background: require('../assets/backgrounds/1.jpg'),
+      background: require('../assets/backgrounds/2.jpg'),
       profilepic: require('../assets/pfp2.jpeg'),
 
       col1Text: "Hello, my name is Uzair Ahmed. I'm a \

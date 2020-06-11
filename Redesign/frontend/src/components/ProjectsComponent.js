@@ -15,7 +15,7 @@ export default class ProjectsComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      background: require('../assets/backgrounds/2.jpg'),
+      background: require('../assets/backgrounds/5.jpg'),
       projects: {
         stemnotes: {
           title: "StemNotes.",
