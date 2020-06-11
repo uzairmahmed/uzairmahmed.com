@@ -51,7 +51,7 @@ const parallax = {
 const scrolls = {
     spy: true,
     smooth: true,
-    offset: 0,
+    offset: -35,
     duration: 500,
 }
 
