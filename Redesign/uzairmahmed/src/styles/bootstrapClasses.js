@@ -4,14 +4,16 @@ const containers = {
 
 const divs = {
     headerDiv1: "text-center d-flex align-items-center",
-    headerDiv2: "text-center container-fluid"
+    headerDiv2: "text-center container-fluid",
+    footerDiv: "col-3 text-center text-sm-center text-md-right text-lg-right text-xl-right d-xl-flex justify-content-xl-end align-items-xl-end"
 }
 
 const rows = {
     baseDivContentRow: "d-table d-print-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex ",
     langsCategoryRow: "no-gutters row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 row-cols-xl-4 text-center justify-content-center align-items-center",
-    skillsCategoryRow:"no-gutters row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 align-items-center justify-content-center ",
+    skillsCategoryRow: "no-gutters row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 align-items-center justify-content-center ",
     skillsRow: "align-items-xl-center",
+    contactRow:"no-gutters row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 align-items-center justify-content-center ",
 }
 
 const columns = {

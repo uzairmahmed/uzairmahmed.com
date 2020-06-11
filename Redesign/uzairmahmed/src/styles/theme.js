@@ -2,7 +2,9 @@ import { Parallax } from "react-parallax"
 
 const colors = {
     primary: "#FFF",
-    secondary: "#000"
+    secondary: "#000",
+    lightGray: "#AAA",
+    darkGray: "#555",
 }
 
 const spacing = {
@@ -10,6 +12,8 @@ const spacing = {
     small: "25px",
     regular: "50px",
     large: "75px",
+    extraLarge: "100px",
+    giant: "200px",
 
     cardWidth: "300px",
     inputRadius: "10px",

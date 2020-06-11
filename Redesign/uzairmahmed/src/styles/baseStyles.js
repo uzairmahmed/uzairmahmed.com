@@ -4,6 +4,7 @@ const block = {
     margin:theme.spacing.regular + " 0px" ,
     minHeight: "100vh",
     width: "100vw",
+    justifyContent: "center",
 }
 
 const row = {
@@ -13,7 +14,6 @@ const row = {
 
 const container = {
     alignItems:"center",
-    // backgroundColor:"rgba(100,100,100,0.6)"
 }
 
 const header = {
@@ -48,4 +48,4 @@ const button = {
 }
 
 
-export { block, row, container, header, paragraph, profilepicture, button }
+export { block, row, container, header, paragraph, profilepicture, button,  }

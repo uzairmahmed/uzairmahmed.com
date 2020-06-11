@@ -7,6 +7,7 @@ import Col from 'react-bootstrap/Col';
 
 import BaseDiv from '../common/BaseDiv'
 import ContactCard from '../common/ContactCard'
+import SocialsCard from '../common/SocialsCard'
 import ContactForm from '../common/ContactForm'
 
 import { baseStyles, contactStyles, bootstrapClasses, theme } from '../styles'
@@ -58,42 +59,34 @@ export default class ContactComponent extends Component {
           <BaseDiv
             header="Contact."
             maincontent={
-              <>
-                <Row>
-                  <Col>
-                    <ContactCard
-                      value={this.state.email.value}
-                      link={this.state.email.link}
-                      img={this.state.email.img}
-                    />
-                    <ContactCard
-                      value={this.state.phone.value}
-                      link={this.state.phone.link}
-                      img={this.state.phone.img}
-                    />
-                      <Row>
-                        <ContactCard
-                          value={this.state.github.value}
-                          link={this.state.github.link}
-                          img={this.state.github.img}
-                        />
-                        <ContactCard
-                          value={this.state.linkedin.value}
-                          link={this.state.linkedin.link}
-                          img={this.state.linkedin.img}
-                        />
-                        <ContactCard
-                          value={this.state.ig.value}
-                          link={this.state.ig.link}
-                          img={this.state.ig.img}
-                        />
-                      </Row>
-                  </Col>
-                  <Col>
-                    <ContactForm />
-                  </Col>
-                </Row>
-              </>
+              <Row style={{width:"100%"}} className={bootstrapClasses.rows.contactRow}>
+                <Col>
+                  <ContactCard
+                    value={this.state.email.value}
+                    link={this.state.email.link}
+                    img={this.state.email.img}
+                  />
+                  <ContactCard
+                    value={this.state.phone.value}
+                    link={this.state.phone.link}
+                    img={this.state.phone.img}
+                  />
+                  <SocialsCard
+                    GHvalue={this.state.github.value}
+                    GHlink={this.state.github.link}
+                    GHimg={this.state.github.img}
+                    INvalue={this.state.linkedin.value}
+                    INlink={this.state.linkedin.link}
+                    INimg={this.state.linkedin.img}
+                    IGvalue={this.state.ig.value}
+                    IGlink={this.state.ig.link}
+                    IGimg={this.state.ig.img}
+                  />
+                </Col>
+                <Col>
+                  <ContactForm />
+                </Col>
+              </Row>
             }
           />
         </Parallax>

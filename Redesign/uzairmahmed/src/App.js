@@ -9,6 +9,7 @@ import About from './components/AboutComponent'
 import Skills from './components/SkillsComponent'
 import Projects from './components/ProjectsComponent'
 import Contact from './components/ContactComponent'
+import Footer from './components/FooterComponent'
 
 
 function App() {
@@ -27,10 +28,9 @@ function App() {
         <About    />
         <Skills   />
         <Projects />
-        <Contact />
-
+        <Contact  />
+        <Footer   />
       </body>
-      
     </div>
   );
 }

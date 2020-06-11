@@ -1,13 +1,16 @@
 import { theme, baseStyles } from '.'
 
 const card = {
-    margin: theme.spacing.small,
+    margin: theme.spacing.regular + " " + theme.spacing.small,
     padding: theme.spacing.small,
     alignContent: "center",
     backgroundColor: theme.colors.secondary,
     borderRadius: theme.spacing.radius,
 }
 
+const socialCard = {
+    padding: theme.spacing.small,
+}
 
 const icon = {
     alignSelf: "center",
@@ -31,4 +34,4 @@ const formButton = {
     width: "100%"
 }
 
-export { card, icon, formButton, formInput }
+export { card, icon, socialCard, formButton, formInput }
