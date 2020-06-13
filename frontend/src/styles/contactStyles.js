@@ -1,4 +1,4 @@
-import { theme, baseStyles } from '.'
+import { theme } from '.'
 
 const card = {
     margin: theme.spacing.regular + " " + theme.spacing.small,
@@ -21,7 +21,7 @@ const icon = {
 const formInput = {
     color: theme.colors.primary,
     margin: theme.spacing.small + " 0",
-    padding: theme.spacing.small + " " + "0",
+    padding: theme.spacing.small + " 0",
     backgroundColor: theme.colors.secondary,
     borderWidth: 0,
     borderBottom: "1px solid" + theme.colors.primary,

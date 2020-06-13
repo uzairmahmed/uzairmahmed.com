@@ -5,9 +5,7 @@ import { Element } from 'react-scroll';
 import BaseDiv from '../common/BaseDiv'
 import ProjectCard from '../common/ProjectCard'
 
-import { baseStyles, projectStyles, bootstrapClasses, theme } from '../styles/'
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { projectStyles, theme } from '../styles/'
 import CardDeck from 'react-bootstrap/CardDeck';
 
 

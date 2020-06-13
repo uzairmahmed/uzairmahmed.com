@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button'
 
-import { baseStyles, bootstrapClasses, contactStyles, theme } from '../styles'
+import { baseStyles, contactStyles } from '../styles'
 
 class ContactForm extends Component {
   render() {

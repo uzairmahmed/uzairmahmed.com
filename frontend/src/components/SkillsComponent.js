@@ -5,13 +5,12 @@ import Tab from 'react-bootstrap/Tab'
 import { Parallax } from 'react-parallax';
 import { Element } from 'react-scroll'
 
-import { baseStyles, skillsStyles, bootstrapClasses, theme } from '../styles';
+import { skillsStyles, bootstrapClasses, theme } from '../styles';
 
 import BaseDiv from '../common/BaseDiv'
 import LangCard from '../common/LangCard';
 import SkillCard from '../common/SkillCard';
 import Nav from 'react-bootstrap/Nav';
-import Col from 'react-bootstrap/Col';
 
 class SkillsComponent extends Component {
   constructor(props) {

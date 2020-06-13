@@ -1,17 +1,11 @@
 import React, { Component } from 'react';
 
 import Container from 'react-bootstrap/Container';
-import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
-import { baseStyles, footerStyles, bootstrapClasses, theme } from '../styles/'
-import { container } from '../styles/baseStyles';
+import { footerStyles, } from '../styles/'
 
 class FooterComponent extends Component {
-  constructor(props) {
-    super(props);
-
-  }
 
   render() {
     return (

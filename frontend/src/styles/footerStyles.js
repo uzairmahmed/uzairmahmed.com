@@ -1,4 +1,4 @@
-import { theme, baseStyles } from '.'
+import { theme } from '.'
 
 const footer = {
     height: theme.spacing.giant,

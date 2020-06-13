@@ -3,7 +3,7 @@ import { Parallax } from 'react-parallax';
 import { Element } from 'react-scroll';
 
 
-import { baseStyles, bootstrapClasses, theme } from '../styles/'
+import { theme } from '../styles/'
 
 export default class Base extends Component {
   constructor(props) {

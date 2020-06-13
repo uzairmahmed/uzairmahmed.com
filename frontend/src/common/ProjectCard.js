@@ -2,13 +2,9 @@ import React, { Component } from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button'
 
-import { baseStyles, projectStyles, bootstrapClasses, theme } from '../styles'
-import Col from 'react-bootstrap/Col';
+import { baseStyles, projectStyles, bootstrapClasses } from '../styles'
 
 export default class LangCard extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (

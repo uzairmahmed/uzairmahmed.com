@@ -1,4 +1,3 @@
-import { Parallax } from "react-parallax"
 
 const colors = {
     primary: "#FFF",

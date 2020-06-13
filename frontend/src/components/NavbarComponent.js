@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar';
 
 import NavLink from '../common/NavLink'
-import { navbarStyles, theme } from '../styles/'
+import { navbarStyles } from '../styles/'
 
 class NavbarComponent extends Component {
   constructor(props) {
@@ -17,7 +17,7 @@ class NavbarComponent extends Component {
   componentDidMount() {
     window.onscroll = () => {
       const newScrollHeight = Math.ceil(window.scrollY / 50) * 50;
-      if (this.state.currentScrollHeight != newScrollHeight) {
+      if (this.state.currentScrollHeight !== newScrollHeight) {
         this.setState({ currentScrollHeight: newScrollHeight })
       }
     }

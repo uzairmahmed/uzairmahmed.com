@@ -16,15 +16,8 @@ class AboutComponent extends Component {
       background: require('../assets/backgrounds/2.jpg'),
       profilepic: require('../assets/pfp2.jpeg'),
 
-      col1Text: "Hello, my name is Uzair Ahmed. I'm a \
-3rd year Computer + Software Engineering student at \
-Ryerson University. \n\nI have a passion for software and \
-hardware development.",
-
-      col2Text: "My Interests in Software Development are \
-geared towards Machine Learning, Game Development and App \
-Development. \n\nAdditionally, my interests related to \
-hardware development include IoT, Robotics and Circuit Design.",
+      col1Text: "Hello, my name is Uzair Ahmed. I'm a 3rd year Computer + Software Engineering student at Ryerson University. \n\nI have a passion for software and hardware development.",
+      col2Text: "My Interests in Software Development are geared towards Machine Learning, Game Development and App Development. \n\nAdditionally, my interests related to hardware development include IoT, Robotics and Circuit Design.",
 
     }
   }

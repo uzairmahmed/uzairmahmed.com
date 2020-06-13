@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
 import Image from 'react-bootstrap/Image'
-import { Parallax } from 'react-parallax';
 
-import { baseStyles, skillsStyles, bootstrapClasses, theme } from '../styles'
+import { skillsStyles, bootstrapClasses } from '../styles'
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
 export default class SkillCard extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Col xs={12} sm={12} md={12} lg={6} xl={6}>
