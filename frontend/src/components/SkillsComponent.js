@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab'
-import { Parallax } from 'react-parallax';
 import { Element } from 'react-scroll'
 
 import { skillsStyles, bootstrapClasses, theme } from '../styles';
@@ -158,15 +157,9 @@ class SkillsComponent extends Component {
   render() {
     return (
       <Element name="Skills" className="Skills">
-        <Parallax
-          blur={theme.parallax.blur}
-          bgImage={this.state.background}
-          bgImageAlt={theme.parallax.alt}
-          strength={theme.parallax.strength}
-          style={theme.parallax.style}
-        >
           <BaseDiv
             header="Skills."
+            bg={this.state.background}
             maincontent={
                 <Tab.Container id="left-tabs-example" defaultActiveKey="languages">
                   <Nav style={skillsStyles.skillsNav}>
@@ -255,7 +248,6 @@ class SkillsComponent extends Component {
                 </Tab.Container>
             }
           />
-        </Parallax>
       </Element>
 
     );

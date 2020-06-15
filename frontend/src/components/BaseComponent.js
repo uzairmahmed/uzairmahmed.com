@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Parallax } from 'react-parallax';
 import { Element } from 'react-scroll';
 
 
@@ -16,18 +15,9 @@ export default class Base extends Component {
   render() {
     return (
       <Element name="BASE" className="BASE">
-
-        <Parallax
-          blur={theme.parallax.blur}
-          bgImage={this.state.background}
-          bgImageAlt={theme.parallax.alt}
-          strength={theme.parallax.strength}
-          style={theme.parallax.style}
-        >
           <div>
 
           </div>
-        </Parallax>
       </Element>
     );
   }

@@ -1,7 +1,7 @@
 import { theme } from '.'
 
 const block = {
-    margin:theme.spacing.regular + " 0px" ,
+    //margin:theme.spacing.regular + " 0px" ,
     minHeight: "100vh",
     width: "100vw",
     justifyContent: "center",

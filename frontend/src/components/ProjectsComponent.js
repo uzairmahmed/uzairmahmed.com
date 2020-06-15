@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Parallax } from 'react-parallax';
 import { Element } from 'react-scroll';
 
 import BaseDiv from '../common/BaseDiv'
@@ -70,15 +69,9 @@ export default class ProjectsComponent extends Component {
   render() {
     return (
       <Element name="Projects" className="Projects">
-        <Parallax
-          blur={theme.parallax.blur}
-          bgImage={this.state.background}
-          bgImageAlt={theme.parallax.alt}
-          strength={theme.parallax.strength}
-          style={theme.parallax.style}
-        >
           <BaseDiv
             header="Projects."
+            bg={this.state.background}
             maincontent={
               <CardDeck
                 style={projectStyles.cardDeck}
@@ -137,7 +130,6 @@ export default class ProjectsComponent extends Component {
               </CardDeck>
             }
           />
-        </Parallax>
       </Element>
     );
   }

@@ -23,7 +23,11 @@ class BaseDiv extends Component {
     return (
       <div
         className={bootstrapClasses.containers.baseDivContainer}
-        style={baseStyles.block}
+        style={{
+          ...baseStyles.block,
+          backgroundImage: "url(" + this.props.bg + ")",
+          backgroundSize:"cover"
+        }}
       >
         <Container style={baseStyles.container}>
           <Row>

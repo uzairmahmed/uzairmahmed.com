@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Parallax } from 'react-parallax';
 import { Element } from 'react-scroll';
 
 import { baseStyles, headerStyles, bootstrapClasses, theme } from '../styles/'
@@ -18,16 +17,13 @@ class HeaderComponent extends Component {
   render() {
     return (
       <Element name="Home" className="Home">
-        <Parallax
-          blur={theme.parallax.blur}
-          bgImage={this.state.background}
-          bgImageAlt={theme.parallax.alt}
-          strength={theme.parallax.strength}
-          style={theme.parallax.style}
-        >
           <div
             className={bootstrapClasses.divs.headerDiv1}
-            style={baseStyles.block}
+          style={{
+            ...baseStyles.block,
+            backgroundImage: "url(" + this.state.background + ")",
+            backgroundSize:"cover"
+          }}
           >
             <Container
               className={bootstrapClasses.divs.headerDiv2}
@@ -41,7 +37,6 @@ class HeaderComponent extends Component {
               </h4>
             </Container>
           </div>
-        </Parallax>
       </Element>
     );
   }

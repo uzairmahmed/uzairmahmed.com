@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 import Image from 'react-bootstrap/Image'
-import { Parallax } from 'react-parallax';
 import { Element } from 'react-scroll'
 
 import { baseStyles, bootstrapClasses, theme } from '../styles';
@@ -25,54 +24,46 @@ class AboutComponent extends Component {
   render() {
     return (
       <Element name="About" className="About">
-        <Parallax
-          blur={theme.parallax.blur}
-          bgImage={this.state.background}
-          bgImageAlt={theme.parallax.alt}
-          strength={theme.parallax.strength}
-          style={theme.parallax.style}
-        >
-          <BaseDiv
-            header="About."
-            maincontent={
-              <>
-                <Col>
-                  <p style={{
-                    ...baseStyles.paragraph,
-                    padding: "25px",
-                  }}>
-                    {this.state.col1Text}
-                  </p>
-                </Col>
+        <BaseDiv
+          header="About."
+          bg={this.state.background}
+          maincontent={
+            <>
+              <Col>
+                <p style={{
+                  ...baseStyles.paragraph,
+                  padding: "25px",
+                }}>
+                  {this.state.col1Text}
+                </p>
+              </Col>
 
-                <Col>
-                  <Image
-                    className={bootstrapClasses.images.rounded}
-                    style={baseStyles.profilepicture}
-                    src={this.state.profilepic}
-                  />
-                </Col>
+              <Col>
+                <Image
+                  className={bootstrapClasses.images.rounded}
+                  style={baseStyles.profilepicture}
+                  src={this.state.profilepic}
+                />
+              </Col>
 
-                <Col>
-                  <p style={baseStyles.paragraph}>
-                    {this.state.col2Text}
-                  </p>
-                </Col>
-              </>
-            }
+              <Col>
+                <p style={baseStyles.paragraph}>
+                  {this.state.col2Text}
+                </p>
+              </Col>
+            </>
+          }
 
-            extracontent={
-              <Button
-                href="https://drive.google.com/drive/folders/1F6-c_xKXOuM0xrg8GAHExlLHkD293d-r?usp=sharing"
-                className={bootstrapClasses.buttons.button}
-                style={baseStyles.button}
-              >
-                Uzair Ahmed - Resume
+          extracontent={
+            <Button
+              href="https://drive.google.com/drive/folders/1F6-c_xKXOuM0xrg8GAHExlLHkD293d-r?usp=sharing"
+              className={bootstrapClasses.buttons.button}
+              style={baseStyles.button}
+            >
+              Uzair Ahmed - Resume
             </Button>
-            }
-          />
-
-        </Parallax>
+          }
+        />
       </Element>
     );
   }

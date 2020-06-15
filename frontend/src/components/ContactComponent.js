@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Parallax } from 'react-parallax';
 import { Element } from 'react-scroll';
 
 import Row from 'react-bootstrap/Row';
@@ -49,15 +48,9 @@ export default class ContactComponent extends Component {
   render() {
     return (
       <Element name="Contact" className="Contact">
-        <Parallax
-          blur={theme.parallax.blur}
-          bgImage={this.state.background}
-          bgImageAlt={theme.parallax.alt}
-          strength={theme.parallax.strength}
-          style={theme.parallax.style}
-        >
           <BaseDiv
             header="Contact."
+            bg={this.state.background}
             maincontent={
               <Row style={{width:"100%"}} className={bootstrapClasses.rows.contactRow}>
                 <Col>
@@ -89,7 +82,6 @@ export default class ContactComponent extends Component {
               </Row>
             }
           />
-        </Parallax>
       </Element>
     );
   }

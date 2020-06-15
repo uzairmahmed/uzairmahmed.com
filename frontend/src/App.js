@@ -22,7 +22,7 @@ function App() {
 
       </head>
 
-      <body style={{ backgroundColor: "#000" }}>
+      <body style={{ backgroundColor: "#000", overflowX:"hidden"}}>
         <Navbar   />
         <Header   />
         <About    />
