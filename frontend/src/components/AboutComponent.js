@@ -7,6 +7,7 @@ import { Element } from 'react-scroll'
 
 import { baseStyles, bootstrapClasses, theme } from '../styles';
 import BaseDiv from '../common/BaseDiv'
+import Row from 'react-bootstrap/Row';
 
 class AboutComponent extends Component {
   constructor(props) {
@@ -28,7 +29,9 @@ class AboutComponent extends Component {
           header="About."
           bg={this.state.background}
           maincontent={
-            <>
+            <Row
+              className={bootstrapClasses.rows.aboutRow}
+              style={baseStyles.row}>
               <Col>
                 <p style={{
                   ...baseStyles.paragraph,
@@ -51,7 +54,7 @@ class AboutComponent extends Component {
                   {this.state.col2Text}
                 </p>
               </Col>
-            </>
+            </Row>
           }
 
           extracontent={

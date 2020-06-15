@@ -10,6 +10,7 @@ const divs = {
 
 const rows = {
     baseDivContentRow: "d-table d-print-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex ",
+    aboutRow: "row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3 text-center justify-content-center align-items-center",
     langsCategoryRow: "no-gutters row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 row-cols-xl-4 text-center justify-content-center align-items-center",
     skillsCategoryRow: "no-gutters row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 align-items-center justify-content-center ",
     skillsRow: "align-items-xl-center",
