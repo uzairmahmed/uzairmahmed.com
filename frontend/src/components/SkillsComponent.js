@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab'
 import { Element } from 'react-scroll'
 
-import { skillsStyles, bootstrapClasses, theme } from '../styles';
+import { skillsStyles, bootstrapClasses } from '../styles';
 
 import BaseDiv from '../common/BaseDiv'
 import LangCard from '../common/LangCard';

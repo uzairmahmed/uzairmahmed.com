@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button'
 import Image from 'react-bootstrap/Image'
 import { Element } from 'react-scroll'
 
-import { baseStyles, bootstrapClasses, theme } from '../styles';
+import { baseStyles, bootstrapClasses } from '../styles';
 import BaseDiv from '../common/BaseDiv'
 import Row from 'react-bootstrap/Row';
 

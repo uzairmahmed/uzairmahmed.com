@@ -9,7 +9,7 @@ import ContactCard from '../common/ContactCard'
 import SocialsCard from '../common/SocialsCard'
 import ContactForm from '../common/ContactForm'
 
-import { bootstrapClasses, theme } from '../styles'
+import { bootstrapClasses } from '../styles'
 
 
 export default class ContactComponent extends Component {

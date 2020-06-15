@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Element } from 'react-scroll';
 
-import { baseStyles, headerStyles, bootstrapClasses, theme } from '../styles/'
+import { baseStyles, headerStyles, bootstrapClasses } from '../styles/'
 import Container from 'react-bootstrap/Container';
 
 class HeaderComponent extends Component {
