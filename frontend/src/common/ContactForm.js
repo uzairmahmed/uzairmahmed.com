@@ -8,10 +8,11 @@ import { baseStyles, contactStyles } from '../styles'
 class ContactForm extends Component {
   render() {
     return (
-      <Form data-netlify="true" style={contactStyles.card} >
+      <Form name="contact" method="POST" data-netlify="true" style={contactStyles.card} >
         <Form.Group controlId="formText">
           <Form.Control
             required
+            name="name"
             type="text"
             placeholder="Name"
             style={contactStyles.formInput}
@@ -20,6 +21,7 @@ class ContactForm extends Component {
         <Form.Group controlId="formEmail">
           <Form.Control
             required
+            name="email"
             type="email"
             placeholder="Email"
             style={contactStyles.formInput}
@@ -28,6 +30,7 @@ class ContactForm extends Component {
         <Form.Group controlId="formPhone">
           <Form.Control
             type="tel"
+            name="telephone"
             placeholder="Phone"
             style={contactStyles.formInput}
           />
@@ -35,6 +38,7 @@ class ContactForm extends Component {
         <Form.Group controlId="formSubject">
           <Form.Control
             type="text"
+            name="subject"
             placeholder="Subject"
             style={contactStyles.formInput}
           />
@@ -43,6 +47,7 @@ class ContactForm extends Component {
           <Form.Control
             required
             as='textarea'
+            name="text"
             type="text"
             placeholder="Message"
             style={contactStyles.formInput}
@@ -50,7 +55,6 @@ class ContactForm extends Component {
         </Form.Group>
 
         <Button
-          disabled
           variant="light"
           type="submit"
           style={{
