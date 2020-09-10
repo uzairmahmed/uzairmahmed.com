@@ -20,23 +20,18 @@ function App() {
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
-
+        
       </head>
 
-      <body style={{ backgroundColor: "#000", overflowX: "hidden" }}>
-        <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-          <input type="text" name="name" />
-          <input type="email" name="email" />
-          <textarea name="message"></textarea>
-        </form>
+      <body style={{ backgroundColor: "#000", overflowX:"hidden"}}>
         
-        <Navbar />
-        <Header />
-        <About />
-        <Skills />
+        <Navbar   />
+        <Header   />
+        <About    />
+        <Skills   />
         <Projects />
-        <Contact />
-        <Footer />
+        <Contact  />
+        <Footer   />
       </body>
     </div>
   );
