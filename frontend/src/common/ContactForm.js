@@ -8,7 +8,7 @@ import { baseStyles, contactStyles } from '../styles'
 class ContactForm extends Component {
   render() {
     return (
-      <Form name="contact" method="POST" data-netlify="true" style={contactStyles.card} >
+      <Form netlify name="contact" method="POST" data-netlify="true" style={contactStyles.card} >
         <Form.Group controlId="formText">
           <Form.Control
             required
