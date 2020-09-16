@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 import BaseDiv from '../common/BaseDiv'
 import ContactCard from '../common/ContactCard'
 import SocialsCard from '../common/SocialsCard'
-import ContactForm from '../common/ContactForm'
+// import ContactForm from '../common/ContactForm'
 
 import { bootstrapClasses } from '../styles'
 
