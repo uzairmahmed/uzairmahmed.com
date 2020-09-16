@@ -7,6 +7,7 @@ import Navbar from './components/NavbarComponent'
 import Header from './components/HeaderComponent'
 import About from './components/AboutComponent'
 import Skills from './components/SkillsComponent'
+import Experience from './components/ExperienceComponent'
 import Projects from './components/ProjectsComponent'
 import Contact from './components/ContactComponent'
 import Footer from './components/FooterComponent'
@@ -29,6 +30,7 @@ function App() {
         <Header   />
         <About    />
         <Skills   />
+        <Experience />
         <Projects />
         <Contact  />
         <Footer   />

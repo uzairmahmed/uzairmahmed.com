@@ -1,7 +1,7 @@
 import { theme } from '.'
 
 const block = {
-    //margin:theme.spacing.regular + " 0px" ,
+    padding :theme.spacing.regular + " 0px" ,
     minHeight: "100vh",
     width: "100vw",
     justifyContent: "center",
@@ -13,6 +13,7 @@ const row = {
 }
 
 const container = {
+    // marginVertical:500,
     alignItems:"center",
 }
 
@@ -24,10 +25,18 @@ const header = {
     color: theme.fonts.fontColor
 }
 
+const emphasis = {
+    fontFamily: theme.fonts.fontParagraph,
+    fontSize: theme.fonts.fontSizeSub,
+    color: theme.fonts.fontColor,
+    lineHeight:'1.5em'
+}
+
 const paragraph = {
     fontFamily: theme.fonts.fontParagraph,
     fontSize: theme.fonts.fontSizePara,
-    color: theme.fonts.fontColor 
+    color: theme.fonts.fontColor,
+    lineHeight:'1.5em'
 }
 
 const profilepicture = {
@@ -48,4 +57,4 @@ const button = {
 }
 
 
-export { block, row, container, header, paragraph, profilepicture, button,  }
+export { block, row, emphasis, container, header, paragraph, profilepicture, button,  }

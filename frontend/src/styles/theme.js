@@ -31,6 +31,7 @@ const fonts = {
     fontSizeTitle: "50px",
     fontSizeHead: "25px",
     fontSizePara: "15px",
+    fontSizeSub: "20px",
 
     fontWeight: "400",
     fontWeightLight: "200",

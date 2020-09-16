@@ -43,6 +43,7 @@ class NavbarComponent extends Component {
               <NavLink title="Home" />
               <NavLink title="About" />
               <NavLink title="Skills" />
+              <NavLink title="Experience" />
               <NavLink title="Projects"/>
               <NavLink title="Contact"/>
             </Nav>

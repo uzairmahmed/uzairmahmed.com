@@ -14,7 +14,8 @@ const rows = {
     langsCategoryRow: "no-gutters row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 row-cols-xl-4 text-center justify-content-center align-items-center",
     skillsCategoryRow: "no-gutters row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 align-items-center justify-content-center ",
     skillsRow: "align-items-xl-center",
-    contactRow:"no-gutters row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 align-items-center justify-content-center ",
+    contactRow: "no-gutters row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 align-items-center justify-content-center ",
+    experienceTitleRow: "row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 text-center justify-content-center align-items-center",
 }
 
 const columns = {

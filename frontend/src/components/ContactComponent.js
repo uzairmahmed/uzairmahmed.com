@@ -76,9 +76,9 @@ export default class ContactComponent extends Component {
                     IGimg={this.state.ig.img}
                   />
                 </Col>
-                <Col>
+                {/* <Col>
                   <ContactForm />
-                </Col>
+                </Col> */}
               </Row>
             }
           />
