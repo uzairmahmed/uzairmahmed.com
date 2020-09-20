@@ -13,6 +13,7 @@ export default class ExperienceCard extends Component {
     let midContents;
 
     if (window.matchMedia("(max-width: 768px)").matches) {
+      //mobile view
       midContents = (
         <Row xl={2} lg={2} md={1} sm={1} xs={1}
           style={experienceStyles.cardHeader}>
@@ -33,6 +34,7 @@ export default class ExperienceCard extends Component {
         </Row>
       )
     } else {
+      //desktop view
       midContents = (
         <Row xl={2} lg={2} md={1} sm={1} xs={1}
           style={experienceStyles.cardHeader}>

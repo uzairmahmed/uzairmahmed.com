@@ -14,6 +14,14 @@ export default class ProjectsComponent extends Component {
     this.state = {
       background: require('../assets/backgrounds/2.jpg'),
       works: {
+        tecla: {
+          img: require('../assets/experience/rye.png'),
+          tit: "Ryerson University Inclusive Media and Design Centre",
+          loc: "Toronto, ON",
+          pos: "Research Assistant - Tecla Project",
+          dur: "Sep 2020 - Present",
+          txt: "Technologies Used: Arduino, Raspberry Pi, Bluetooth. \n- Work under Dr. Deborah Fels developing Arduino and Raspberry Pi software for integrating accessibility devices with iOS and Android via the Bluetooth protocol."
+        },
         ryeai: {
           img: require('../assets/experience/ryeai.png'),
           tit: "Ryerson Artificial Intelligence",
@@ -52,6 +60,15 @@ export default class ProjectsComponent extends Component {
             <CardDeck
               style={experienceStyles.cardDeck}
             >
+              <ExperienceCard
+                img={this.state.works.tecla.img}
+                title={this.state.works.tecla.tit}
+                location={this.state.works.tecla.loc}
+                position={this.state.works.tecla.pos}
+                duration={this.state.works.tecla.dur}
+                text={this.state.works.tecla.txt}
+              />
+              <div class="w-100 d-block"></div>
               <ExperienceCard
                 img={this.state.works.ryeai.img}
                 title={this.state.works.ryeai.tit}
