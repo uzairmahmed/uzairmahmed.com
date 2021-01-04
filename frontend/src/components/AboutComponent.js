@@ -59,11 +59,11 @@ class AboutComponent extends Component {
 
           extracontent={
             <Button
-              href="https://drive.google.com/drive/folders/1F6-c_xKXOuM0xrg8GAHExlLHkD293d-r?usp=sharing"
+              href="https://drive.google.com/file/d/1WhyEgzCmjkq9yqoFKnR9GYY_HxLR4ZZn/view?usp=sharing"
               className={bootstrapClasses.buttons.button}
               style={baseStyles.button}
             >
-              Uzair Ahmed - Resume
+              My Resume.
             </Button>
           }
         />
