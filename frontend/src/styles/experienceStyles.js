@@ -21,7 +21,7 @@ const iconHolder2 = {
 }
 
 const cardHeader = {
-    justifyContent:'space-between',
+    justifyContent: 'space-between',
     padding:"0 " + theme.spacing.small,
 }
 
@@ -35,7 +35,8 @@ const headers = {
     textAlign:'center'
 }
 const headers2 = {
-    textAlign:'left'
+    textAlign: 'left',
+    whiteSpace:'nowrap'
 }
 
 const cardBody = {
