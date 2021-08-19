@@ -28,14 +28,14 @@ export default class LangCard extends Component {
               </h2>
             </Col>
           </a>
-          <a href={this.props.IGlink}>
+          {/* <a href={this.props.IGlink}>
             <Col style={contactStyles.socialCard}>
               <Image src={this.props.IGimg} style={contactStyles.icon} />
               <h2 style={baseStyles.paragraph} >
                 {this.props.IGvalue}
               </h2>
             </Col>
-          </a>
+          </a> */}
         </Row>
 
       </Card>

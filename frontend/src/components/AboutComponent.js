@@ -59,7 +59,7 @@ class AboutComponent extends Component {
 
           extracontent={
             <Button
-              href="https://drive.google.com/file/d/1WhyEgzCmjkq9yqoFKnR9GYY_HxLR4ZZn/view?usp=sharing"
+              href="https://drive.google.com/file/d/1slfEIQ7d7nksE2wj-keC_43CtZAZ9fgN/view?usp=sharing"
               className={bootstrapClasses.buttons.button}
               style={baseStyles.button}
             >

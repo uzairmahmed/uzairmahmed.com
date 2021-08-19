@@ -59,11 +59,11 @@ export default class ContactComponent extends Component {
                     link={this.state.email.link}
                     img={this.state.email.img}
                   />
-                  <ContactCard
+                  {/* <ContactCard
                     value={this.state.phone.value}
                     link={this.state.phone.link}
                     img={this.state.phone.img}
-                  />
+                  /> */}
                   <SocialsCard
                     GHvalue={this.state.github.value}
                     GHlink={this.state.github.link}
