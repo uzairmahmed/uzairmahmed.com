@@ -14,6 +14,22 @@ export default class ProjectsComponent extends Component {
     this.state = {
       background: require('../assets/backgrounds/2.jpg'),
       works: {
+        andie2: {
+          img: require('../assets/experience/andie.png'),
+          tit: "Andie Technologies",
+          loc: "Toronto, ON",
+          pos: "Full Stack Developer",
+          dur: "Sep 2021 - Present",
+          txt: "Technologies Used: React Native, Expo, Django, MySQL, Firebase, ReactJS, Google Cloud."
+        },
+        tecla2: {
+          img: require('../assets/experience/rye.png'),
+          tit: "Ryerson University Inclusive Media and Design Centre",
+          loc: "Toronto, ON",
+          pos: "Research Assistant - Tecla Project",
+          dur: "Sep 2021 - Present",
+          txt: "Technologies Used: Android, Bluetooth."
+        },
         td: {
           img: require('../assets/experience/td.png'),
           tit: "TD Bank",
@@ -68,6 +84,24 @@ export default class ProjectsComponent extends Component {
             <CardDeck
               style={experienceStyles.cardDeck}
             >
+              <ExperienceCard
+                img={this.state.works.tecla2.img}
+                title={this.state.works.tecla2.tit}
+                location={this.state.works.tecla2.loc}
+                position={this.state.works.tecla2.pos}
+                duration={this.state.works.tecla2.dur}
+                text={this.state.works.tecla2.txt}
+              />
+              <div class="w-100 d-block"></div>
+              <ExperienceCard
+                img={this.state.works.andie2.img}
+                title={this.state.works.andie2.tit}
+                location={this.state.works.andie2.loc}
+                position={this.state.works.andie2.pos}
+                duration={this.state.works.andie2.dur}
+                text={this.state.works.andie2.txt}
+              />
+              <div class="w-100 d-block"></div>
               <ExperienceCard
                 img={this.state.works.td.img}
                 title={this.state.works.td.tit}
