@@ -1,12 +1,13 @@
 import React from 'react';
 import '../App.css';
-import { IoLogoLinkedin, IoIosMail, IoLogoGithub } from 'react-icons/io';
+import { IoLogoLinkedin, IoIosMail, IoLogoGithub, IoIosPaper } from 'react-icons/io';
 
 
 const Main = () => {
     const [emailShown, setEmailShown] = React.useState(false)
     const [gitHubShown, setGithubShown] = React.useState(false)
     const [linkedInShown, setLinkedInShown] = React.useState(false)
+    const [resumeShown, setResumeShown] = React.useState(false)
 
     return (
         <div class='w-screen h-screen bg-black flex flex-row'>
@@ -24,6 +25,10 @@ const Main = () => {
                     {linkedInShown ?
                         <h1 class='p-10 m-10 font-name  font-normal text-lg text-zinc-50 '>in/uzairmahmed</h1> :
                         <h1 class='opacity-50 font-name p-10 m-10 font-normal text-lg text-zinc-50 '>in/uzairmahmed</h1>
+                    }
+                    {resumeShown ?
+                        <h1 class='p-10 m-10 font-name  font-normal text-lg text-zinc-50 '>Resume</h1> :
+                        <h1 class='opacity-50 font-name p-10 m-10 font-normal text-lg text-zinc-50 '>Resume</h1>
                     }
                 </div>
                 <div class='w-1/3 h-screen bg-zinc-800 flex justify-center items-center flex-col'>
@@ -55,6 +60,16 @@ const Main = () => {
                         <div class='m-10'>
                             <IoLogoLinkedin color='white' size='5em' />
                             <h1 class='font-light font-name text-sm text-zinc-50 text-center'>LinkedIn.</h1>
+                        </div>
+                    </a>
+                    <a
+                        href='https://drive.google.com/file/d/1OEyOLjmJYwXRXfmC5JpunrRCn7TZpU7U/view?usp=sharing'
+                        onMouseEnter={() => setResumeShown(true)}
+                        onMouseLeave={() => setResumeShown(false)}
+                    >
+                        <div class='m-10'>
+                            <IoIosPaper color='white' size='5em' />
+                            <h1 class='font-light font-name text-sm text-zinc-50 text-center'>Resume.</h1>
                         </div>
                     </a>
                 </div>
