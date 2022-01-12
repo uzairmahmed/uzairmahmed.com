@@ -2,10 +2,64 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-      fontFamily:{
+      fontFamily: {
         name: "'Quicksand', sans-serif"
       }
-    },  
+    },
   },
+  
+  safelist: [
+    'text-slate-50',
+    'text-zinc-50',
+    'text-stone-50',
+    'text-red-50',
+    'text-amber-50',
+    'text-yellow-50',
+    'text-emerald-50',
+    'text-teal-50',
+    'text-cyan-50',
+    'text-blue-50',
+    'text-indigo-50',
+    'text-violet-50',
+
+    'bg-slate-700',
+    'bg-zinc-700',
+    'bg-stone-700',
+    'bg-red-700',
+    'bg-amber-700',
+    'bg-yellow-700',
+    'bg-emerald-700',
+    'bg-teal-700',
+    'bg-cyan-700',
+    'bg-blue-700',
+    'bg-indigo-700',
+    'bg-violet-700',
+
+    'bg-slate-800',
+    'bg-zinc-800',
+    'bg-stone-800',
+    'bg-red-800',
+    'bg-amber-800',
+    'bg-yellow-800',
+    'bg-emerald-800',
+    'bg-teal-800',
+    'bg-cyan-800',
+    'bg-blue-800',
+    'bg-indigo-800',
+    'bg-violet-800',
+
+    'bg-slate-900',
+    'bg-zinc-900',
+    'bg-stone-900',
+    'bg-red-900',
+    'bg-amber-900',
+    'bg-yellow-900',
+    'bg-emerald-900',
+    'bg-teal-900',
+    'bg-cyan-900',
+    'bg-blue-900',
+    'bg-indigo-900',
+    'bg-violet-900',
+  ],
   plugins: [],
 }
